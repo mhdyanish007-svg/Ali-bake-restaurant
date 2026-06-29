@@ -1,0 +1,2690 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="">
+      <meta name="description" content=" - Fast Food & Restaurant HTML Template">
+      <title> - Fast Food & Restaurant HTML Template</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-phone-alt"></i>+974 5516 0005</span>
+                  <span><i class="fas fa-envelope"></i>info@alibaik.com</span>
+                  <span><i class="fas fa-map-marker-alt"></i>Building 224, Zone 56, Street 250, Al Ebb, Doha, Qatar</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="ttag"><i class="fas fa-fire me-1"></i>Free Delivery Today!</span>
+                  <div class="tsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                  <div class="bico"><i class="fas fa-utensils"></i></div>
+                  <div>
+                     <div class="bname">Sar<span>ab</span></div>
+                     <div class="bsub">Fast Food & Restaurant</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 ? SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>What are you craving today?</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="Search burgers, pizza, chicken..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="all">
+                  <img src="menu/1.jpg" alt=""/>All Items
+               </div>
+               <div class="sovcat" data-cat="burgers">
+                  <img src="menu/1.jpg" alt=""/>Burgers
+               </div>
+               <div class="sovcat" data-cat="pizza">
+                  <img src="menu/2.jpg" alt=""/>Pizza
+               </div>
+               <div class="sovcat" data-cat="chicken">
+                  <img src="menu/3.jpg" alt=""/>Chicken
+               </div>
+               <div class="sovcat" data-cat="wraps">
+                  <img src="menu/4.jpg" alt=""/>Wraps
+               </div>
+               <div class="sovcat" data-cat="pasta">
+                  <img src="menu/5.jpg" alt=""/>Pasta
+               </div>
+               <div class="sovcat" data-cat="desserts">
+                  <img src="menu/6.jpg" alt=""/>Desserts
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+               <span class="ttag">Smash Burger</span>
+               <span class="ttag">Nashville Chicken</span>
+               <span class="ttag">Truffle Pizza</span>
+               <span class="ttag">Lava Cake</span>
+               <span class="ttag">Loaded Fries</span>
+               <span class="ttag">Mango Shake</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">FOOD</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>? Rated 4.9 By Customers</span>
+                  </div>
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-clock"></i></div>
+                     <span>Open 24 Hours</span>
+                  </div>
+                  <h1 class="htitle">Authentic Arabic Flavours Served Fresh 24 Hours A Day</h1>
+                  <p class="hdesc">From juicy shawarma and charcoal-grilled meats to freshly baked pastries and traditional Arabic dishes, Ali Baik Restaurant has become a favourite destination for food lovers in Doha.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>View Menu</a>
+                     <!-- FIX 2: Magnific popup video trigger -->
+					 <a href="https://wa.me/97455160005" class="btn-red">
+						<div class="pico"><i class="fab fa-whatsapp"></i></div>
+						<span>Order On WhatsApp</span>
+					 </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">4.9<span>?</span></span><small>Google Rating</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">24<span>/7</span></span><small>Open</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">Fresh</span><small>Daily</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">Affordable</span><small>Prices</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="banner-img.jpg" alt="Burger"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fas fa-fire"></i></div>
+                        <div><span class="fcnum">Hot Deal</span><span class="fcsm">30% off today</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi y"><i class="fas fa-star"></i></div>
+                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
+                        <div><span class="fcnum">20 min</span><span class="fcsm">Fast delivery</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
+         </div>
+      </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What We Offer</span>
+               <h2 class="stitle">Browse by <span>Category</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">From sizzling burgers to exotic world cuisines - find your favourite in our menu</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="category/1.jpg" alt=""/>
+                     <div class="catnm">All Items</div>
+                     <div class="catct">99 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="burgers">
+                     <img class="catimg" src="category/2.jpg" alt=""/>
+                     <div class="catnm">Burgers</div>
+                     <div class="catct">24 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="pizza">
+                     <img class="catimg" src="category/3.jpg" alt=""/>
+                     <div class="catnm">Pizza</div>
+                     <div class="catct">18 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="chicken">
+                     <img class="catimg" src="category/4.jpg" alt=""/>
+                     <div class="catnm">Fried Chicken</div>
+                     <div class="catct">15 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+                  <div class="catcard" data-filter="wraps">
+                     <img class="catimg" src="category/5.jpg" alt=""/>
+                     <div class="catnm">Wraps</div>
+                     <div class="catct">12 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="catcard" data-filter="desserts">
+                     <img class="catimg" src="category/6.jpg" alt=""/>
+                     <div class="catnm">Desserts</div>
+                     <div class="catct">20 items</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="aexp"><span class="anum">12+</span><small>Years of<br/>Excellence</small></div>
+                     <div class="amain"><img src="about1.jpg" alt="Restaurant"/></div>
+                     <div class="asm"><img src="about2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">A Local Favourite In Doha</span>
+                  <h2 class="stitle text-start">Ali Baik Restaurant</h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Ali Baik Restaurant proudly serves authentic Arabic food prepared with fresh ingredients and traditional recipes. Known for our shawarma, charcoal-grilled meats, homemade dishes, pastries, and fresh bread, we provide quality meals at affordable prices 24 hours a day.</p>
+                  <p class="sdesc mb-4">Whether you're enjoying breakfast, lunch, dinner, or a late-night meal, Ali Baik Restaurant is always ready to welcome you.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-leaf"></i></div>
+                        <div>
+                           <h6>Fresh Ingredients Daily</h6>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-award"></i></div>
+                        <div>
+                           <h6>Authentic Arabic Recipes</h6>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+                        <div>
+                           <h6>Fresh Bread Made Daily</h6>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-clock"></i></div>
+                        <div>
+                           <h6>Open 24 Hours</h6>
+                           <p></p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>View Menu</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ============================================================
+         MENU ? FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What's Cooking</span>
+               <h2 class="stitle">Our Delicious <span>Menu</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- FIX 3 ? filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="all">All</button>
+               <button class="filtbtn" data-f="shawarma">Shawarma</button>
+               <button class="filtbtn" data-f="charcoal-grilled">Charcoal Grilled</button>
+               <button class="filtbtn" data-f="pizza">Pizza</button>
+               <button class="filtbtn" data-f="homemade-dishes">Homemade Dishes</button>
+               <button class="filtbtn" data-f="breakfast">Breakfast</button>
+               <button class="filtbtn" data-f="pastries">Pastries</button>
+               <button class="filtbtn" data-f="appetizers">Appetizers</button>
+               <button class="filtbtn" data-f="beverages">Beverages</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pizza.jpg" alt="Pepperoni Pizza"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pizza</div>
+                        <div class="mtit">Pepperoni Pizza</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 24</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pizza.jpg" alt="Veggie Pizza"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pizza</div>
+                        <div class="mtit">Veggie Pizza</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 19</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pizza.jpg" alt="Chicken Ranch Pizza"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pizza</div>
+                        <div class="mtit">Chicken Ranch Pizza</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 27</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Arabic Shawarma Meal"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Arabic Shawarma Meal</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 24</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Liver Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Liver Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 14</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Shawarma Plate"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Shawarma Plate</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 24</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Family Arabic Shawarma Box"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Family Arabic Shawarma Box</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 67</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Small Chicken Shawarma"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Small Chicken Shawarma</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 9</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Large Chicken Shawarma"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Large Chicken Shawarma</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 14</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="shawarma" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/shawarma.jpg" alt="Double Arabic Shawarma Meal"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Shawarma</div>
+                        <div class="mtit">Double Arabic Shawarma Meal</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 36</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="French Fries Plate"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">French Fries Plate</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"></div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Baba Ganoush"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Baba Ganoush</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"></div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Hummus"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Hummus</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 9</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Muhammara"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Muhammara</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"></div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Ali Baik Salad"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Ali Baik Salad</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 17</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Mutabal Eggplant"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Mutabal Eggplant</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"></div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="appetizers" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/appetizers.jpg" alt="Coleslaw Salad"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Appetizers</div>
+                        <div class="mtit">Coleslaw Salad</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"></div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Broasted Meal With Fries"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Broasted Meal With Fries</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 28</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Charcoal Grilled Beef Burger"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Charcoal Grilled Beef Burger</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 26</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Grilled Meat Kebab Meal"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Grilled Meat Kebab Meal</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 35</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Whole Grilled Chicken"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Whole Grilled Chicken</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 38</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Grilled Meat Chunks Meal"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Grilled Meat Chunks Meal</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 38</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Meat Kebab Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Meat Kebab Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 15</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Shish Tawook Meal"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Shish Tawook Meal</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 33</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Half Grilled Chicken"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Half Grilled Chicken</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 22</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Charcoal Grilled Chicken Burger"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Charcoal Grilled Chicken Burger</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 21</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Arabic Meat With Fries"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Arabic Meat With Fries</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 16</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Fresh Sausage Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Fresh Sausage Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 16</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Meat Chunks Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Meat Chunks Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 16</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="charcoal-grilled" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/charcoal-grilled.jpg" alt="Shish Tawook Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Charcoal Grilled</div>
+                        <div class="mtit">Shish Tawook Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 13</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Ouzi Rice Pockets"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Ouzi Rice Pockets</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 32</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Meat Curry"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Meat Curry</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 35</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Chinese Pasta"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Chinese Pasta</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 34</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Lamb Mandi"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Lamb Mandi</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 40</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Spaghetti"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Spaghetti</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 32</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Okra With Lamb"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Okra With Lamb</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 42</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Molokhia"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Molokhia</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 35</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Palestinian Musakhan"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Palestinian Musakhan</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 35</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Chicken Biryani"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Chicken Biryani</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 34</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="White Bean Stew"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">White Bean Stew</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 37</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="homemade-dishes" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/homemade-dishes.jpg" alt="Zucchini With Yogurt"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Homemade Dishes</div>
+                        <div class="mtit">Zucchini With Yogurt</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 35</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Meat Pastry"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Meat Pastry</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 13</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Sausage Pastry"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Sausage Pastry</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Akkawi Cheese & Thyme Manoushe"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Akkawi Cheese & Thyme Manoushe</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Zaatar Baladi Manoushe"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Zaatar Baladi Manoushe</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Kraft Cheese & Honey Pastry"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Kraft Cheese & Honey Pastry</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="pastries" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/pastries.jpg" alt="Egg & Cheese Pastry"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pastries</div>
+                        <div class="mtit">Egg & Cheese Pastry</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="breakfast" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/breakfast.jpg" alt="Falafel Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Breakfast</div>
+                        <div class="mtit">Falafel Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 6</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="breakfast" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/breakfast.jpg" alt="Mixed Fried Vegetables"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Breakfast</div>
+                        <div class="mtit">Mixed Fried Vegetables</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 12</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="breakfast" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/breakfast.jpg" alt="Shakshuka"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Breakfast</div>
+                        <div class="mtit">Shakshuka</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="breakfast" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/breakfast.jpg" alt="Fava Beans Sandwich"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Breakfast</div>
+                        <div class="mtit">Fava Beans Sandwich</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 7</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="beverages" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/beverages.jpg" alt="Fresh Ayran Yoghurt 330ml"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Beverages</div>
+                        <div class="mtit">Fresh Ayran Yoghurt 330ml</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 8</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="beverages" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/beverages.jpg" alt="Orange Juice 330ml"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Beverages</div>
+                        <div class="mtit">Orange Juice 330ml</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>               <div class="col-sm-6 col-lg-4 mwrap" data-c="beverages" data-aos="fade-up">
+                  <div class="mcard">
+                     <div class="mimg">
+                        <img src="/img/menu-placeholders/beverages.jpg" alt="Lemon & Mint Juice 330ml"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Beverages</div>
+                        <div class="mtit">Lemon & Mint Juice 330ml</div>
+                        <div class="mdesc"></div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">QAR 10</div>
+                              <div class="mstars"><i class="fas fa-star"></i></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="#" class="btn-red"><i class="fas fa-th-large"></i>View Full Menu</a></div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         FIX 4 ? MENU DETAIL POPUP MODAL
+         ============================================================ -->
+      <div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="font-size:.82rem;color:#aaa;margin-left:9px;">portion</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         GALLERY ? FIX 7 (click opens detail popup)
+         ============================================================ -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Gallery</span>
+               <h2 class="stitle">A Taste Of <span>What We Offer</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/gallery/shawarma.jpg"
+                  data-gtitle="Chicken Shawarma"
+                  data-gdesc="Marinated chicken, slow-cooked on a vertical rotisserie, thinly sliced and served in fresh Arabic bread with garlic sauce.">
+                  <img src="img/gallery/shawarma.jpg" alt="Chicken Shawarma"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Chicken Shawarma</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/gallery/mixed-grill.jpg"
+                  data-gtitle="Mixed Grill Platter"
+                  data-gdesc="A generous platter featuring succulent lamb kebabs, shish tawook, and kofta, all expertly charcoal-grilled.">
+                  <img src="img/gallery/mixed-grill.jpg" alt="Mixed Grill Platter"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Mixed Grill Platter</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/gallery/lamb-mandi.jpg"
+                  data-gtitle="Lamb Mandi"
+                  data-gdesc="Traditional Yemeni dish featuring tender, slow-cooked lamb served on a bed of aromatic basmati rice with special spices.">
+                  <img src="img/gallery/lamb-mandi.jpg" alt="Lamb Mandi"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Lamb Mandi</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/gallery/chicken-broasted.jpg"
+                  data-gtitle="Broasted Chicken"
+                  data-gdesc="Crispy and juicy pressure-fried chicken, marinated in our secret blend of herbs and spices, served with fries.">
+                  <img src="img/gallery/chicken-broasted.jpg" alt="Broasted Chicken"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Broasted Chicken</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/gallery/pizza.jpg"
+                  data-gtitle="Assorted Pizzas"
+                  data-gdesc="Hand-tossed pizzas with a variety of toppings from classic pepperoni to our special Arabic-inspired creations.">
+                  <img src="img/gallery/pizza.jpg" alt="Assorted Pizzas"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Assorted Pizzas</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="5"
+                  data-gimg="img/gallery/fresh-pastries.jpg"
+                  data-gtitle="Fresh Turkish Pastries"
+                  data-gdesc="A delightful selection of sweet and savory pastries, baked fresh daily, including baklava, kunafa, and simit.">
+                  <img src="img/gallery/fresh-pastries.jpg" alt="Fresh Turkish Pastries"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Fresh Turkish Pastries</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="6"
+                  data-gimg="img/gallery/arabic-breakfast.jpg"
+                  data-gtitle="Arabic Breakfast Spread"
+                  data-gdesc="Start your day with a traditional Arabic breakfast spread featuring hummus, foul medames, labneh, and fresh bread.">
+                  <img src="img/gallery/arabic-breakfast.jpg" alt="Arabic Breakfast Spread"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Arabic Breakfast Spread</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="7"
+                  data-gimg="img/gallery/palestinian-musakhan.jpg"
+                  data-gtitle="Palestinian Musakhan"
+                  data-gdesc="Roasted chicken baked with onions, sumac, saffron, and fried pine nuts served over taboon bread.">
+                  <img src="img/gallery/palestinian-musakhan.jpg" alt="Palestinian Musakhan"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Palestinian Musakhan</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="8"
+                  data-gimg="img/gallery/freshly-baked-khubz.jpg"
+                  data-gtitle="Freshly Baked Khubz"
+                  data-gdesc="Our signature Arabic bread, baked fresh in our traditional oven throughout the day, perfect with any meal.">
+                  <img src="img/gallery/freshly-baked-khubz.jpg" alt="Freshly Baked Khubz"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Freshly Baked Khubz</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="9"
+                  data-gimg="img/gallery/family-dining.jpg"
+                  data-gtitle="Family Dining Experience"
+                  data-gdesc="Enjoy a warm and welcoming atmosphere perfect for family gatherings, with spacious seating and friendly service.">
+                  <img src="img/gallery/family-dining.jpg" alt="Family Dining Experience"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Family Dining Experience</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIX 7 ? GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- ============================================================
+         HISTORY ? FIX 8 (alternating left/right text)
+         ============================================================ -->
+      <section id="history">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Journey</span>
+               <h2 class="stitle">A History of <span>Restaurant</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">From humble beginnings to the city's most beloved restaurant - every chapter written with passion.</p>
+            </div>
+            <div class="timeline" data-aos="fade-up">
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2012</div>
+                     <h5>Evolution of Restaurants</h5>
+                     <p> opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2012</div>
+                     <h5>Evolution of Restaurants</h5>
+                     <p> opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2015</div>
+                     <h5>Fine Dining &amp; The Concept</h5>
+                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2015</div>
+                     <h5>Fine Dining &amp; The Concept</h5>
+                     <p>Expanding the vision - we introduced our signature tasting menu and hired our first Michelin-trained chef, elevating our craft to remarkable new heights.</p>
+                  </div>
+               </div>
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2019</div>
+                     <h5>Modern Fast Food Origins</h5>
+                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2019</div>
+                     <h5>Modern Fast Food Origins</h5>
+                     <p>Launched our signature fast-food line, merging gourmet quality with speed and convenience. Within 6 months we won 3 prestigious culinary awards nationally.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2026</div>
+                     <h5>National Expansion</h5>
+                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2026</div>
+                     <h5>National Expansion</h5>
+                     <p>Now operating in 8 cities across the US with an online delivery platform handling 10,000+ orders weekly - and growing every single day.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+	  
+	  
+      <!-- HOURS -->
+      <section id="hours">
+         <div class="hrsbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl" style="color:#a5d6bc;">Opening Hours</span>
+               <h2 class="stitle" style="color:#fff;">We're Open <span style="color:var(--secondary);">For You</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="hrscard">
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Monday - Tuesday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot off"></div>
+                           <span class="hrstime" style="color:#ff6b6b;">Closed</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Wednesday - Thursday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 AM - 10:00 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Friday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 AM - 11:00 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Saturday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 AM - 11:30 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Sunday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">11:00 AM - 09:00 PM</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3" data-aos="zoom-in">
+                  <div class="hrscta">
+                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+                     <h4>Order Online</h4>
+                     <p>Get hot food delivered in 25 minutes</p>
+                     <a href="#menu" class="btnw">Order Now ?</a>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-aos="fade-left">
+                  <div class="hrscard">
+                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>Address</span><span class="hrstime" style="font-size:.8rem;">42 Flavor Street, NY</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>Phone</span><span class="hrstime" style="font-size:.8rem;">+1 (800) 123-4567</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">hello@sarabfood.com</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+<!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- CUSTOMER REVIEWS (ALI BAIK) -->
+      <section id="customer-reviews">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What People Say</span>
+               <h2 class="stitle">Customer <span>Reviews</span></h2>
+               <div class="sline"></div>
+               <div class="mb-4" style="font-size:1.5rem; color:#E65100;">
+                 ????? 4.9 Google Rating
+               </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card p-4 h-100 shadow-sm">
+                     <p class="mb-3">\"The best shawarma I've had in Doha. Fresh, flavourful, and always consistent.\"</p>
+                     <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/60" alt="Customer Avatar" class="rounded-circle me-3" style="width:60px; height:60px; object-fit:cover;">
+                        <div>
+                           <h6 class="mb-0">Customer 1</h6>
+                           <small class="text-muted">Doha, Qatar</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card p-4 h-100 shadow-sm">
+                     <p class="mb-3">\"The pastries are always fresh and delicious. Highly recommended.\"</p>
+                     <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/60" alt="Customer Avatar" class="rounded-circle me-3" style="width:60px; height:60px; object-fit:cover;">
+                        <div>
+                           <h6 class="mb-0">Customer 2</h6>
+                           <small class="text-muted">Doha, Qatar</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card p-4 h-100 shadow-sm">
+                     <p class="mb-3">\"One of the best BBQ experiences I've had in Qatar.\"</p>
+                     <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/60" alt="Customer Avatar" class="rounded-circle me-3" style="width:60px; height:60px; object-fit:cover;">
+                        <div>
+                           <h6 class="mb-0">Customer 3</h6>
+                           <small class="text-muted">Doha, Qatar</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card p-4 h-100 shadow-sm">
+                     <p class="mb-3">\"Fresh bread, friendly staff, and excellent food.\"</p>
+                     <div class="d-flex align-items-center">
+                        <img src="https://via.placeholder.com/60" alt="Customer Avatar" class="rounded-circle me-3" style="width:60px; height:60px; object-fit:cover;">
+                        <div>
+                           <h6 class="mb-0">Customer 4</h6>
+                           <small class="text-muted">Doha, Qatar</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- HUNGRY? ORDER FROM ALI BAIK TODAY -->
+      <section id="order-today" style="background:var(--primary); color:white; padding: 70px 0;">
+         <div class="container text-center">
+            <h2 class="stitle mb-3" style="color:white;font-weight:900;">Hungry? <span style="color:var(--secondary);">Order From Ali Baik Today</span></h2>
+            <p class="sdesc mx-auto mb-5" style="max-width:600px; color:rgba(255,255,255,.8);">Fresh Shawarma, BBQ, Pastries & Arabic Meals Available 24 Hours</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+               <a href="tel:+97455160005" class="btn-red"><i class="fas fa-phone-alt"></i> Call Now</a>
+               <a href="https://wa.me/97455160005" class="btn-red"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
+            </div>
+         </div>
+      </section>
+      <!-- RESERVATION FORM -->
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Book a Table</span>
+               <h2 class="stitle">Make a <span>Reservation</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Reserve your table for a memorable dining experience. We recommend booking 24 hours in advance for weekend evenings.</p>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Contact Info</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">We're happy to help you plan the perfect dining experience.</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Opening Hours</strong><span style="color:#fff;font-size:.87rem;">Wed - Sun, 9 AM - 11 PM</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Call for Booking</strong><span style="color:#fff;font-size:.87rem;">+1 (800) 123-4567</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Group Dining</strong><span style="color:#fff;font-size:.87rem;">Special menus for 10+ guests</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">42 Flavor Street, NY</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Full Name *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
+                        <div class="col-sm-6"><label class="flbl">Phone Number *</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
+                        <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Number of Guests *</label>
+                           <select class="fctrl">
+                              <option>1 Person</option>
+                              <option>2 People</option>
+                              <option>3 - 4 People</option>
+                              <option>5 - 6 People</option>
+                              <option>7 -10 People</option>
+                              <option>10+ People</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-6"><label class="flbl">Date *</label><input type="date" class="fctrl"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Time *</label>
+                           <select class="fctrl">
+                              <option>09:00 AM</option>
+                              <option>10:00 AM</option>
+                              <option>11:00 AM</option>
+                              <option>12:00 PM</option>
+                              <option>01:00 PM</option>
+                              <option>02:00 PM</option>
+                              <option>06:00 PM</option>
+                              <option>07:00 PM</option>
+                              <option>08:00 PM</option>
+                              <option>09:00 PM</option>
+                              <option>10:00 PM</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Special Requests</label><textarea class="fctrl" rows="3" placeholder="Allergies, dietary needs, special occasions..."></textarea></div>
+                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirm Reservation</button></div>
+                     </div>
+                     <div class="sucmsg" id="resOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Table reserved! We'll confirm via email shortly.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- WHY CUSTOMERS LOVE ALI BAIK -->
+      <section id="why-love-ali-baik">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Values</span>
+               <h2 class="stitle">Why Customers <span>Love Ali Baik</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <!-- Card 1 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-utensils fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Authentic Arabic Taste</h5>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-leaf fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fresh Ingredients Daily</h5>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-clock fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Open 24 Hours</h5>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bread-slice fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Freshly Baked Bread</h5>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-family fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Family Friendly</h5>
+                  </div>
+               </div>
+               <!-- Card 6 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-tachometer-alt fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Fast Service</h5>
+                  </div>
+               </div>
+               <!-- Card 7 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-dollar-sign fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Affordable Prices</h5>
+                  </div>
+               </div>
+               <!-- Card 8 -->
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                  <div class="card text-center p-4 shadow-sm h-100">
+                     <div class="icon-box mb-3 d-flex justify-content-center align-items-center">
+                        <i class="fas fa-shipping-fast fa-2x" style="color:var(--primary);"></i>
+                     </div>
+                     <h5 class="card-title">Delivery Available</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Ali <span>Baik</span></div>
+                  <p class="fdesc">Authentic Arabic Flavours Served Fresh 24 Hours A Day, located in Doha, Qatar. Experience traditional taste with modern service.</p>
+                  <div class="fsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Quick Links</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Our Menu</a></li>
+                     <li><a href="#reservation"><i class="fas fa-chevron-right"></i>Reservation</a></li>
+                     <li><a href="#blog"><i class="fas fa-chevron-right"></i>Blog</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Our Menu</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Burgers</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pizza</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Fried Chicken</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Wraps &amp; Rolls</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pasta</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Desserts</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">Get In Touch</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>Address</strong>Building 224, Zone 56, Street 250, Al Ebb, Doha, Qatar</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>Phone</strong>+974 5516 0005</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>Email</strong>info@alibaik.com</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-clock"></i></div>
+                     <div class="fciinfo"><strong>Hours</strong>Wed - Sun: 09 AM - 11 PM</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>[Restaurant Name]</span>. All Rights Reserved by <a target="_blank" class="mx-0 fw-bold text-success" href="https://bestwpware.com/">Bestwpware</a>. Made with <span><i class="fas fa-heart"></i></span>  <br>Distributed by <a target="_blank" class="mx-0 fw-bold text-success" href="https://themewagon.com">ThemeWagon</a></p>
+                  <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Floating cart -->
+      <!-- <div class="cartfl"><i class="fas fa-shopping-cart"></i><span>My Cart</span><div class="ccount" id="cartCount">0</div></div> -->
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+	<!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/97455160005" class="float-whatsapp" target="_blank" style="position: fixed; width: 60px; height: 60px; bottom: 40px; left: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100;"><i class=\"fab fa-whatsapp my-float\" style=\"margin-top:16px;\"></i></a>
+
+<!-- Floating Call Button -->
+<a href="tel:+97455160005" class="float-call" style="position: fixed; width: 60px; height: 60px; bottom: 110px; left: 40px; background-color: #0d6efd; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100;"><i class=\"fas fa-phone my-float\" style=\"margin-top:16px;\"></i></a>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
