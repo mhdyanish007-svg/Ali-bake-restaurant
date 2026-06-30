@@ -1,7 +1,7 @@
 :root {
   --primary: #F47C20;
   --secondary: #E65100;
-  --dark: #173D6B;
+  --dark: var(--primary);
   --green: #2d6a4f;
   --cream: #FFF8F1;
   --cream2: #fef0dc;
@@ -249,12 +249,44 @@ section {
 
 /* ===================== HERO ===================== */
 #hero {
-  background: var(--cream);
-  min-height: 92vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25));
+  z-index: 0;
+}
+#hero .hbadge,
+#hero .hbadge span,
+#hero .hbadge .hbi,
+#hero .htitle,
+#hero .hdesc,
+#hero .hstat .snum,
+#hero .hstat small {
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+#hero .hbadge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+#hero .hbadge .hbi {
+  background: var(--primary);
+  color: #fff !important;
 }
 .hbgtxt {
   position: absolute;
@@ -419,90 +451,6 @@ section {
   background: #ddd;
   height: 38px;
   align-self: center;
-}
-.hcircle {
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, #fff8f0, #ffe5c8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  box-shadow: 0 28px 76px rgba(232, 40, 26, 0.14);
-}
-.hcircle img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.fcard {
-  position: absolute;
-  background: #fff;
-  border-radius: 11px;
-  padding: 10px 15px;
-  box-shadow: var(--shadow);
-  display: flex;
-  align-items: center;
-  gap: 9px;
-}
-.fcard.fc1 {
-  top: 55px;
-  left: -15px;
-  animation: fltc 4s ease-in-out infinite;
-}
-.fcard.fc2 {
-  bottom: 75px;
-  right: -25px;
-  animation: fltc 4s ease-in-out infinite 1.5s;
-}
-.fcard.fc3 {
-  top: 38%;
-  right: -45px;
-  animation: fltc 4s ease-in-out infinite 0.8s;
-}
-@keyframes fltc {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-9px);
-  }
-}
-.fcoi {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-}
-.fcoi.r {
-  background: rgba(232, 40, 26, 0.11);
-  color: var(--primary);
-}
-.fcoi.y {
-  background: rgba(246, 166, 35, 0.14);
-  color: var(--secondary);
-}
-.fcoi.g {
-  background: rgba(45, 106, 79, 0.11);
-  color: var(--green);
-}
-.fcnum {
-  font-weight: 700;
-  font-size: 0.92rem;
-  color: var(--dark);
-  display: block;
-  line-height: 1;
-}
-.fcsm {
-  font-size: 0.66rem;
-  color: #999;
 }
 
 /* ===================== MARQUEE ===================== */
@@ -2313,6 +2261,58 @@ footer {
   border-color: var(--primary);
 }
 
+/* --- FULL MENU POPUP (zoomable) --- */
+#fullMenuPop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.95);
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+#fullMenuPop.open {
+  display: flex;
+  animation: fadeov 0.28s ease;
+}
+.fmpbox {
+  position: relative;
+  text-align: center;
+}
+.fmpclose {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.13);
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.fmpclose:hover {
+  background: var(--primary);
+}
+.fmpimg img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 14px;
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+.fmpimg img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
 /* Magnific video override */
 .mfp-bg {
   background: #000 !important;
@@ -2324,16 +2324,6 @@ footer {
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 991px) {
-  .hcircle {
-    width: 320px;
-    height: 320px;
-  }
-  .fc1,
-  .fc2,
-  .fc3 {
-    transform: scale(0.82);
-    transform-origin: center;
-  }
   .ggrid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -2392,11 +2382,6 @@ footer {
     height: 260px;
   }
   /* Hide only hero floating cards, NOT form cards */
-  .fcard.fc1,
-  .fcard.fc2,
-  .fcard.fc3 {
-    display: none !important;
-  }
   .hstats {
     display: none !important;
   }
@@ -2424,10 +2409,6 @@ footer {
   }
 }
 @media (max-width: 480px) {
-  .hcircle {
-    width: 220px;
-    height: 220px;
-  }
   .htitle {
     font-size: 2.4rem;
   }
