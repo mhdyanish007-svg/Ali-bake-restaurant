@@ -349,12 +349,39 @@ document.getElementById('gpNext').addEventListener('click', function() {
     openGal((galIdx + 1) % galData.length);
 });
 
+/* --- FULL MENU POPUP --- */
+var fullMenuPop = document.getElementById('fullMenuPop');
+var fmpImg = document.getElementById('fmpImg');
+
+document.getElementById('viewFullMenuBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    fullMenuPop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+});
+
+document.getElementById('fmpClose').addEventListener('click', closeFullMenu);
+fullMenuPop.addEventListener('click', function(e) {
+    if (e.target === this) closeFullMenu();
+});
+
+// Zoom on menu image click
+fmpImg.addEventListener('click', function() {
+    this.classList.toggle('zoomed');
+});
+
+function closeFullMenu() {
+    fullMenuPop.classList.remove('open');
+    fmpImg.classList.remove('zoomed');
+    document.body.style.overflow = '';
+}
+
 /*  ESC key closes everything */
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeSearch();
         closeMenuPop();
         closeGal();
+        closeFullMenu();
         if (typeof $.magnificPopup !== 'undefined') $.magnificPopup.close();
     }
 });
