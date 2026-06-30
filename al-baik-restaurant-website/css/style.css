@@ -255,6 +255,10 @@ section {
   position: relative;
   overflow: hidden;
 }
+#hero > .container {
+  position: relative;
+  z-index: 1;
+}
 .hero-video-bg {
   position: absolute;
   top: 0;
@@ -273,12 +277,17 @@ section {
 #hero .hbadge,
 #hero .hbadge span,
 #hero .hbadge .hbi,
-#hero .htitle,
 #hero .hdesc,
-#hero .hstat .snum,
 #hero .hstat small {
   color: #fff !important;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+#hero .htitle {
+  color: var(--primary) !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+#hero .hstat .snum {
+  color: var(--primary) !important;
 }
 #hero .hbadge {
   background: rgba(255, 255, 255, 0.15);
